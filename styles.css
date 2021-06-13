@@ -6,7 +6,23 @@
 
 /* -------- Styles for displaying border, only temporary ---------- */
 
-body {
+* {
     padding: 5%;
-    border: 1px solid rgb(225,225,225);
+    border: 1px solid black;
+}
+
+
+/* ----------- Some general classes ---------------------*/
+
+
+.padded { padding: 5%;}
+.padded-small { padding: 2%;}
+
+.background-dark { 
+    background-color: #000033;
+    color: white;
+}
+
+.bg-images {
+    background-image: url("/images/the-sleep-co-lamp.jpg")
 }
