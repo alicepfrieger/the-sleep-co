@@ -19,8 +19,7 @@
 /* ----------- Some general classes ---------------------*/
 
 
-.padded { padding: 5
-    %;}
+.padded { padding: 5%;}
 .padded-small { padding: 2%;}
 
 .background-dark { 
@@ -28,14 +27,25 @@
     color: white;
 }
 
-.bg-images {
-    background-image: url("/images/the-sleep-co-lamp.jpg")
-}
+
+/*------------Background Images ----------*/
+
+.bg-pug     { 
+                background-image: url('/images/the-sleep-co-sleeping-pug.jpg');
+                background-position: 50% 30%;
+                background-size: cover;
+            }
+.bg-lamp    {   background-image: url("/images/the-sleep-co-lamp.jpg");
+                background-position: 50% 0;
+                background-size: cover; 
+            }
 
 /* ------- General settings---------- */
 
 body {
     font-family: Catamaran, sans-serif;
+    font-size: 1rem;
+    color: #192B37;
     border: none;
     text-align: center;
 }
@@ -49,13 +59,17 @@ section{
 
 .height-100     { min-height: 100vh;    }
 .height-80      { min-height: 80vh;     }
+.height-70      { min-height: 70vh;     }
 .height-50      { min-height: 50vh;     }
 
 
 .big-font-size             { font-size: 5rem;     }
 .medium-font-size          {font-size: 2rem;      }
 
+
 .highlight-word            { color: #FFBE00;    }
+
+.align-left                 {text-align: left;}
 
 /* -------------- Header Styling ------------*/
 
@@ -67,13 +81,32 @@ header{
 }
 
 header h2{
-    margin-bottom: 0;
+    margin-top: 50vh;
+    margin-bottom: 1;
     padding: 25vh 5%;
-    line-height: 1;
+    line-height: 0.5;
 }
 
 header h1{
     font-weight: 400;
-    margin: 0;
     padding: 25vh 5%;
+}
+
+
+
+/*-------------- Features Gallery ----------*/
+
+p{
+    font-weight: 200;
+    text-align: left;
+    line-height: 1.4;
+}
+
+section div{
+    padding: 50% 50%;
+}
+
+section div h3{
+    font-size: 2rem;
+    margin-bottom: 1%;
 }
