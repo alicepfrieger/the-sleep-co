@@ -19,11 +19,13 @@
 /* ----------- Some general classes ---------------------*/
 
 
-.padded { padding: 5%;}
-.padded-small { padding: 2%;}
+.padded         { padding: 5%;}
+.padded-small   { padding: 2%;}
+.no-padding     { padding: 5% 0;}
+
 
 .background-dark { 
-    background-color: #000033;
+    background-color: #192B37;
     color: white;
 }
 
@@ -34,10 +36,19 @@
                 background-image: url('/images/the-sleep-co-sleeping-pug.jpg');
                 background-position: 50% 30%;
                 background-size: cover;
+                padding: 0;
             }
 .bg-lamp    {   background-image: url("/images/the-sleep-co-lamp.jpg");
                 background-position: 50% 0;
                 background-size: cover; 
+                padding: 0;
+            }
+
+
+.bg-pillow  {   background-image: url('/images/the-sleep-co-yellow.jpg');
+                background-position: 50% 57%;
+                background-size: cover;
+                padding: 0;
             }
 
 /* ------- General settings---------- */
@@ -50,9 +61,7 @@ body {
     text-align: center;
 }
 
-section{
-    border: 1px solid black;
-}
+
 
 
 /*---------------- Classes ------------------*/
@@ -63,13 +72,36 @@ section{
 .height-50      { min-height: 50vh;     }
 
 
-.big-font-size             { font-size: 5rem;     }
-.medium-font-size          {font-size: 2rem;      }
+.big-font-size              {   font-size: 5rem;     }
+.normal-font-size           {   font-size: 3rem;     }
+.small-font-size            { 
+                                font-size: 1.5rem; 
+                                font-weight: 500;
+                            }
+
+.font-weight-light          {   font-weight: 200;   }
+.font-weight-medium         {   font-weight: 400;   }
+.font-weight-bold           {   font-weight: 600;   }
+
+.quote                      {   
+                                color: rgb(120,120,125);
+                                font-size: 6rem;
+                                display: inline-block;
+                                line-height: 0px;
+                            }
+
+.subtitle                   {
+                                font-size: 1.2rem;
+                                font-weight: 200;
+                                color: rgb(120,120,125);
+}
 
 
 .highlight-word            { color: #FFBE00;    }
+.highlight-word-white          { color: white;  }
 
 .align-left                 {text-align: left;}
+.center                     {align-content: center;}
 
 /* -------------- Header Styling ------------*/
 
@@ -78,35 +110,43 @@ header{
     background-position: center;
     background-size: cover;
     line-height: 1;
+    align-content: center;
 }
 
 header h2{
-    margin-top: 50vh;
-    margin-bottom: 1;
-    padding: 25vh 5%;
-    line-height: 0.5;
+    margin-bottom: 0;
+    line-height: 1;
 }
 
 header h1{
     font-weight: 400;
-    padding: 25vh 5%;
 }
 
 
 
 /*-------------- Features Gallery ----------*/
 
-p{
-    font-weight: 200;
-    text-align: left;
-    line-height: 1.4;
-}
-
-section div{
-    padding: 50% 50%;
-}
 
 section div h3{
     font-size: 2rem;
     margin-bottom: 1%;
 }
+
+
+/*------------Feature Section with Cloud icons-------------*/
+
+i {
+    font-size: 2rem;
+    margin-bottom: 15%;
+}
+
+
+/*-------------- Yellow Banner ---------------*/
+
+section div h2 {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+
+/*------------------ Quote Section --------------*/
