@@ -19,8 +19,8 @@
 /* ----------- Some general classes ---------------------*/
 
 
-.padded         { padding: 5%;}
-.padded-small   { padding: 2%;}
+.padded         { padding: 5%;  }
+.padded-small   { padding: 2%;  }
 .no-padding     { padding: 5% 0;}
 
 
@@ -69,15 +69,16 @@ body {
 .height-100     { min-height: 100vh;    }
 .height-80      { min-height: 80vh;     }
 .height-70      { min-height: 70vh;     }
+.height-60      { min-height: 60vh;     }
 .height-50      { min-height: 50vh;     }
 
 
-.big-font-size              {   font-size: 5rem;     }
-.normal-font-size           {   font-size: 3rem;     }
-.small-font-size            { 
-                                font-size: 1.5rem; 
-                                font-weight: 500;
-                            }
+.big-font-size        {   font-size: 5rem;     }
+.normal-font-size     {   font-size: 3rem;     }
+.small-font-size      { 
+                        font-size: 1.5rem; 
+                        font-weight: 500;
+                      }
 
 .font-weight-light          {   font-weight: 200;   }
 .font-weight-medium         {   font-weight: 400;   }
@@ -102,6 +103,7 @@ body {
 
 .align-left                 {text-align: left;}
 .center                     {align-content: center;}
+.justify-center             {justify-content: center;}
 
 /* -------------- Header Styling ------------*/
 
@@ -131,6 +133,7 @@ section div h3{
     font-size: 2rem;
     margin-bottom: 1%;
 }
+
 
 
 /*------------Feature Section with Cloud icons-------------*/
