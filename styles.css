@@ -290,6 +290,14 @@ form button{
   .sm-margin-b-0 { margin-bottom: 0; }
   .sm-margin-l-0 { margin-left: 0; }
   .sm-margin-r-0 { margin-right: 0; }
+
+  .sm-tall-50 { min-height: 50vh;}
+  .sm-tall-20 { min-height: 20vh;}
+
+  .sm-fontsize-1    { font-size: 1rem;}
+  .sm-fontsize-1-5  { font-size: 1.5rem;}
+  .sm-fontsize-2    { font-size: 2rem;}
+
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
