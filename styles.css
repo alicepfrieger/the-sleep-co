@@ -294,6 +294,7 @@ form button{
   .sm-tall-50 { min-height: 50vh;}
   .sm-tall-20 { min-height: 20vh;}
 
+  .sm-fontsize-0-5  { font-size: 0.5rem;}
   .sm-fontsize-1    { font-size: 1rem;}
   .sm-fontsize-1-5  { font-size: 1.5rem;}
   .sm-fontsize-2    { font-size: 2rem;}
