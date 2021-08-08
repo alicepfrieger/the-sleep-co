@@ -3,16 +3,16 @@ layout: default
 gallery:
  - col-size: col-4_sm-12
    aspect-ratio: square
-   background-image: /images/the-sleep-co-cat.jpg
+   background_image: /images/the-sleep-co-cat.jpg
  - col-size: col-4_sm-12
    aspect-ratio: square
-   background-image: /images/the-sleep-co-customer.jpg
+   background_image: /images/the-sleep-co-customer.jpg
  - col-size: col-4_sm-12
    aspect-ratio: square
-   background-image: /images/the-sleep-co-sleeping-pug.jpg
+   background_image: /images/the-sleep-co-sleeping-pug.jpg
  - col-size: col-12
    aspect-ratio: landscape
-   background-image: /images/the-sleep-co-yellow.jpg   
+   background_image: /images/the-sleep-co-yellow.jpg   
 ---
 
 <!--------------- This is the header with a big background image ---------->
@@ -33,7 +33,7 @@ gallery:
 
         <div class="{{item.col-size}}">
                  <div class="bg-image {{item.aspect-ratio}} 
-                 style="background-image: url('{{item.background-image}}');"></div>
+                 style="background-image: url('{{item.background_image}}');"></div>
         </div>
 
         {% endfor %}
