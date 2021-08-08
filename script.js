@@ -6,8 +6,4 @@ $( document ).ready(function() {
         $(".mobile-menu").fadeToggle()
     });
 
-    AOS.init();
-
-
-
-});
+    });
