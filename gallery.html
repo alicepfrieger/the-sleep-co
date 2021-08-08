@@ -1,0 +1,42 @@
+---
+layout: default
+gallery:
+ - col-size: col-4_sm-12
+   aspect-ratio: square
+   background-image: /images/the-sleep-co-cat.jpg
+ - col-size: col-4_sm-12
+   aspect-ratio: square
+   background-image: /images/the-sleep-co-customer.jpg
+ - col-size: col-4_sm-12
+   aspect-ratio: square
+   background-image: /images/the-sleep-co-sleeping-pug.jpg
+ - col-size: col-12
+   aspect-ratio: landscape
+   background-image: /images/the-sleep-co-yellow.jpg   
+---
+
+<!--------------- This is the header with a big background image ---------->
+<header class="grid height-100 sm-tall-50">
+
+    {% include header-nav.html %}
+    
+    <div class="grid col-12-top center-content">
+        <h2 class="col-12-middle big-font-size sm-fontsize-2 sm-padded-t-0 align-center"> <span class="highlight-word">Explore</span> our gallery </h2>
+        <h3 class="col-12-middle small-font-size sm-fontsize-1 sm-padded-b-0 align-center"> take a look </h1>
+    </div>
+</header>
+
+<!----- Gallery section ----------->
+<section class="padded">
+    <div class="gallery grid"> 
+        {% for item in page.gallery %}
+
+        <div class="{{item.col-size}}">
+                 <div class="bg-image {{item.aspect-ratio}} 
+                 style="background-image: url('{{item.background-image}}');"></div>
+        </div>
+
+        {% endfor %}
+    </div>
+</section>
+

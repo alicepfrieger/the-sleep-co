@@ -13,6 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Catamaran;
 }
 
 
@@ -24,12 +25,14 @@
 .padded-small   { padding: 2%;  }
 .no-padding     { padding: 0;}
 .padded-top     { padding-top: 5%;}
+.padded-top-sm  { padding-top: 2%;}
 .padded-bottom  { padding-bottom: 10%;}
 .padded-right   { padding-right: 5%;}
 .padded-left    { padding-left: 5; }
 
 .margin-left    { margin-left: 2rem; }
 .margin-right   { margin-right: 2rem;}
+.margin-bottom-0 {margin-bottom: 0;}
 
 
 .background-dark { 
@@ -44,6 +47,9 @@
 
 .text-navy      { color: #192B37;}
 
+.gallery [class*="col-"] {
+    padding: 0.5%;
+  }
 
 /*------------Background Images ----------*/
 
@@ -83,6 +89,40 @@
                 padding-bottom: 100%;
 }
 
+.bg-image{
+  background-color: rgb(240,240,240);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  }
+
+
+/*----- Aspect Ratios ------ */
+
+.portrait-tall {
+    padding-bottom: 175%;
+  }
+  
+  .portrait {
+    padding-bottom: 125%;
+  }
+  
+  .square {
+    padding-bottom: 100%;
+  }
+  
+  .landscape {
+    padding-bottom: 66%;
+  }
+  
+  .landscape-wide {
+    padding-bottom: 56%;
+  }
+  
+  .bg-pos-b {
+    background-position: bottom;
+  }
+  }
 
 /* ------- General settings---------- */
 
@@ -154,11 +194,13 @@ header{
     background-position: center;
     background-size: cover;
     line-height: 1;
+    color: #192B37;
 }
 
 header h2{
     margin-bottom: 0;
     line-height: 1;
+    padding-left: 5%;
 }
 
 header h1{
