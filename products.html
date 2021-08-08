@@ -1,56 +1,25 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-
-<!------- Gridlex for Flexbox Styling ---------------->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-<!------- General styles ----------------------------->
-<link href="styles.css" rel="stylesheet">
-
-<!----------Google Font Catamaran--------------------->
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;600;800&display=swap" rel="stylesheet"> 
-
-<!------- Fontawesome Stylesheet for Icons ----------->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<!---------- Responsiveness-------------------------------->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-</head>
-
-
-
-<body>
-
+---
+layout: default
+featured:
+- icon: fas fa-concierge-bell
+  description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse id cumque porro ad nihil, dolorum iure praesentium harum, modi tempore, dolores aliquam! Cumque aliquid porro quidem id labore modi nemo!
+- icon: fas fa-concierge-bell
+  description: Fake description HDDEDEQJWQ
+- icon: fas fa-concierge-bell
+  description:
+---
     
    
     <!--------------- This is the header with a big background image ---------->
 
     <header class="grid height-100">
-        <div class="grid col-12-top nav padded">
-            <div class="col-4 logo padded-top">
-                <a href="/index.html" > 
-                    <h2 class="text-navy">The Sleep Co</h2>
-                </a>
-            </div>
-            <div class="col-8 align-right padded-top padded-right">
-                <nav>
-                    <a href="/index.html" class="padded-small text-navy"> Home </a>
-                    <a href="/about.html" class="padded-small text-navy"> About </a>
-                    <a href="/products.html" class="padded-small text-navy"> Products </a>
-                    <a href="/contact.html"class="padded-small text-navy"> Contact </a>
-                </nav>
-            </div>
-        </div>
+        
+        {% include header-nav.html%}
         <div class="grid col-12-top center-content">
             <h2 class="col-12-middle big-font-size editable"> Meet our <span class="highlight-word">Bestsellers</span></h2>
             <h1 class="col-12-middle small-font-size editable"> Our high quality products </h1>
         </div>
+
     </header>
 
 
@@ -84,9 +53,15 @@
                 Our <span class="highlight-word">service</span> promises
             </h3>
         </div>
-        <div class="col-4 padded"> <i class="fas fa-concierge-bell"></i> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum iure sit corporis, consequatur ullam harum perspiciatis tempora explicabo, repellendus facere, et tenetur qui! Maxime ad sequi quaerat non veniam vel? </p> </div>
-        <div class="col-4 padded"> <i class="fas fa-concierge-bell"></i> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum iure sit corporis, consequatur ullam harum perspiciatis tempora explicabo, repellendus facere, et tenetur qui! Maxime ad sequi quaerat non veniam vel? </p> </div>
-        <div class="col-4 padded"> <i class="fas fa-concierge-bell"></i></i> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum iure sit corporis, consequatur ullam harum perspiciatis tempora explicabo, repellendus facere, et tenetur qui! Maxime ad sequi quaerat non veniam vel? </p> </div>
+
+    {% for item in page.featured %}
+
+        <div class="col-4 padded"> 
+            <i class="{{item.icon}}"> </i> 
+            <p> {{item.description}} </p> 
+        </div>
+
+    {% endfor %}
 
     </section>   
 
@@ -99,22 +74,3 @@
         </div> 
     </section>
 
-       <!------------- Footer------------------->
-
-       <footer class="padded background-dark grid-bottom-spaceBetween align-left">
-        <div class="col-5">
-            <h2 class="normal-font-size"> let's <span class="highlight-word">connect</span> </h2>
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae dolorem eum sapiente maiores accusamus culpa odio consequuntur obcaecati, quam repellendus, rem, deleniti repudiandae illum alias consequatur sequi fuga aliquam ipsam.</p>
-        </div>
-
-        <div class="col-4"> 
-            <p> <span class="font-weight-bold">Call:</span> 055 124566</p>
-            <p> <span class="font-weight-bold">Mail:</span> hello@sleep.co </p>
-            <p> <span class="font-weight-bold">Store:</span> 55 Main St, Chicago </p>
-            <p> <span class="font-weight-bold">Instagram:</span> @thesleepco </p>
-        </div>
-    </footer>
-
-</body>
-
-</html>
