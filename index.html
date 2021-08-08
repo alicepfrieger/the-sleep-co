@@ -6,21 +6,8 @@ layout: default
     <!--------------- This is the header with a big background image ---------->
     <header class="grid height-100 sm-tall-50">
 
-        <div class="grid col-12-top nav padded">
-            <div class="col-4_sm-12 logo padded-top">
-                <a href="/index.html" > 
-                    <h2 class="text-navy">The Sleep Co</h2>
-                </a>
-            </div>
-            <div class="col-8_sm-12 align-right padded-right padded-top sm-text-center sm-fontsize-0-5 sm-padded-t-0 sm-padded-b-0">
-                <nav>
-                    <a href="/index.html" class="padded-small text-navy"> Home </a>
-                    <a href="/about.html" class="padded-small text-navy"> About </a>
-                    <a href="/products.html" class="padded-small text-navy"> Products </a>
-                    <a href="/contact.html"class="padded-small text-navy"> Contact </a>
-                </nav>
-            </div>
-        </div>
+        {% include header-nav.html %}
+        
         <div class="grid col-12-top center-content">
             <h2 class="col-12-middle big-font-size editable sm-fontsize-2 sm-padded-t-0"> <span class="highlight-word">sleep</span> like a baby </h2>
             <h3 class="col-12-middle small-font-size editable sm-fontsize-1 sm-padded-b-0"> the ultimate mattress solution </h1>
