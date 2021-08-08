@@ -1,14 +1,24 @@
 ---
 layout: default
+cards:
+ - heading: Heading 1
+   text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius cumque molestias, quos nam perspiciatis deleniti fugit nihil quas vitae. Amet, voluptatum! Saepe, vero accusantium omnis ab eum dolorum quo.
+   featured_image: /images/the-sleep-co-cat.jpg
+ - heading: Heading 2
+   text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius cumque molestias, quos nam perspiciatis deleniti fugit nihil quas vitae. Amet, voluptatum! Saepe, vero accusantium omnis ab eum dolorum quo.
+   featured_image: /images/the-sleep-co-sleeping-pug.jpg
+ - heading: Heading 3
+   text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius cumque molestias, quos nam perspiciatis deleniti fugit nihil quas vitae. Amet, voluptatum! Saepe, vero accusantium omnis ab eum dolorum quo.
+   featured_image: /images/the-sleep-co-customer.jpg
 ---
     
-   
 
     <!--------------- This is the header with a big background image ---------->
     
     <header class="grid height-100">
         
-        {% include header-nav.html%}
+        {% include header-nav.html %}
+
         <div class="grid col-12-top center-content">
             <h2 class="col-12-middle big-font-size editable"> <span class="highlight-word">This</span> is who we are </h2>
             <h1 class="col-12-middle small-font-size editable"> Get to know us </h1>
@@ -19,30 +29,19 @@ layout: default
     <!------------- Section with three cards ---------------------------->
 
     <section class="grid-spaceBetween height-90 padded">
+
+        {% for item in page.cards %}
         <div class="col-3 test-border no-padding">
-            <div class="bg-pug height-50">
+            <div class="bg-pug height-50" style="background-image: url('{{item.featured_image}}')">
                 <!--- Image will be inserted by utiliy class ---->
             </div>
             <div>
-                <p class="padded"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate harum expedita repellendus sed culpa. Quaerat labore quos rem error totam nihil, voluptas sit. Repudiandae repellat maxime repellendus exercitationem omnis incidunt.</p>
+                <h3> {{item.heading}} </h3>
+                <p class="padded"> {{item.text}} </p>
             </div>
         </div>
-        <div class="col-3 test-border no-padding">
-            <div class="bg-lamp height-50">
-                <!--- Image will be inserted by utiliy class ---->
-            </div>
-            <div>
-                <p class="padded"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate harum expedita repellendus sed culpa. Quaerat labore quos rem error totam nihil, voluptas sit. Repudiandae repellat maxime repellendus exercitationem omnis incidunt.</p>
-            </div>
-        </div>
-        <div class="col-3 test-border no-padding">
-            <div class="bg-pillow height-50">
-                <!--- Image will be inserted by utiliy class ---->
-            </div>
-            <div>
-                <p class="padded"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate harum expedita repellendus sed culpa. Quaerat labore quos rem error totam nihil, voluptas sit. Repudiandae repellat maxime repellendus exercitationem omnis incidunt.</p>
-            </div>
-        </div>
+        {% endfor %}
+
     </section>
 
 
